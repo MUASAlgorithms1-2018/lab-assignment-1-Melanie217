@@ -3,4 +3,4 @@ project(lab-assignment-1-Melanie217)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lab-assignment-1-Melanie217 main.cpp)
+add_executable(lab-assignment-1-Melanie217 task1.cpp)
