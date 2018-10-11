@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int cubic_mss(int list[], int size) {
+int cubic_mss(const int list[], int size) {
     int n = size/sizeof(int);
     int maxSum = 0;
     for (int i = 1; i <= n ; i++) {
@@ -19,7 +19,7 @@ int cubic_mss(int list[], int size) {
     return maxSum;
 }
 
-int quad_mss(int list[], int size) {
+int quad_mss(const int list[], int size) {
     int n = size/sizeof(int);
     int maxSum = 0;
     for (int i = 1; i <= n ; i++) {
@@ -34,7 +34,7 @@ int quad_mss(int list[], int size) {
     return maxSum;
 }
 
-int lin_mss(int list[], int size) {
+int lin_mss(const int list[], int size) {
     int n = size/sizeof(int);
     int maxSum = 0;
     int thisSum = 0;
