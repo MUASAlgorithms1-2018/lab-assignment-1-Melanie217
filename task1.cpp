@@ -4,7 +4,20 @@ using namespace std;
 
 int cubic_mss(const int list[], int size) {
     int n = size/sizeof(int);
-    return n;
+    int maxSum = 0;
+    int thisSum;
+    for (int i = 1; i <= n ; ++i) {
+        for (int j = i; j <= n ; ++j) {
+            thisSum = 0;
+            for (int k = i; k <= j ; ++k) {
+                thisSum = thisSum + list[k];
+                if (thisSum > maxSum) {
+                    maxSum = thisSum;
+                }
+            }
+        }
+    }
+    return maxSum;
 }
 
 
